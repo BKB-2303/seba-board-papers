@@ -90,6 +90,18 @@ contact-box label{
     border-radius: 10px;
     cursor:pointer;
 }
+        .btn2{
+    float: right;
+    padding: 0px 18px;
+    border: 2px solid white;
+    background-color:green;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
 
 .center{
     text-align: center;
@@ -205,6 +217,8 @@ contact-box label{
               <!-- <input type="submit"  value="submit" class="btn"  /> -->
                        
                        <button class="btn" id="mybtn"  onclick="fireSweetAlert()" >submit</button> 
+                                               <button class="btn2" onclick="nextpage()" >Next page</button> 
+
                     </div>
                 </form>
             </div>
@@ -232,7 +246,12 @@ contact-box label{
  
  
         </script>
-
+<script>
+    function nextpage(){
+        window.location.href = 'nextpage.html';
+    
+    }
+    </script>
       <script src="loader.js"></script>
 
     <script src="script.js"></script>
