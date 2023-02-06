@@ -176,7 +176,27 @@ contact-box label{
             </div>
         </footer>
 
-        
+         <script>
+            const scriptURL =
+         "https://script.google.com/macros/s/AKfycbyZK_SdnJG4OwHXk9RfRESyOzLPWfEPTrptov5oPcv16-bWwC6BqK8DU4Y1Lz2oNzJ6fg/exec";
+       const form = document.forms["Feedback"];
+ 
+       form.addEventListener("submit", (e) => {
+         e.preventDefault();
+         fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      
+                 .then(() => { 
+
+
+         window.location.href = 'thankyoupage.html';
+ 
+           
+           })
+                 .catch(error => console.error('Error!', error.message))
+             })
+ 
+ 
+        </script>
                   
                   <script>
                     function homepage(){
