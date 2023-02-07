@@ -3,6 +3,8 @@
     overflow: hidden;
     background-color:rgba(0, 0, 0, 0.763);
     padding: 25px 10px;
+        box-shadow: 0px 0px 28px rgba(56, 34, 135, 0.804);
+
   }
   
   /* Style the header links */
